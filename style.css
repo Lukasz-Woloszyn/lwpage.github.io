@@ -1,0 +1,296 @@
+body
+    {
+        height: 100%;
+        background-image: url(GRAFIKA/tło.jpeg);
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+    }
+
+    #calosc
+    {
+        width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .scrollup
+    {
+	width: 128px;
+	height: 128px;
+	text-decoration: none;
+	background: url("GRAFIKA/scrollup.png") no-repeat 0px 0px;
+	position: fixed;
+	right: 150px;
+	bottom: 100px;
+	display: none;
+    }
+    
+    #banner
+    {
+        width:1100px;
+        height:368px;
+    }
+
+    #tresc
+    {
+        text-align: justify;
+        float: left;
+        background-color: lightgoldenrodyellow;
+        width: 820px;
+        min-height: 2000px;
+        padding: 20px;
+    }
+
+    .wieszcz
+    {
+        padding: 10px;
+        text-align: justify;
+        margin-top: 10px;
+    }
+
+    .wieszczimg
+    {
+        display: inline-block;
+        margin-left: 10px;
+        width: 180px;
+    }
+
+    .wieszczimg img
+    {
+        width: 160px;
+        height: 160px;
+    }
+
+    .wieszcztxt
+    {
+        display: inline-block;
+        width: 600px;
+        font-size: 16px;
+    }
+
+    #menu
+    {
+        float: left;
+        width: 220px;
+        min-height: 2020px;
+        padding: 10px;
+        background-color: rgb(146, 210, 250);
+        text-align: left;    
+    }
+
+    ol.menu
+    {
+        padding-left: 0;
+        margin-top: 25px;
+    }
+
+    ol.menu > li
+    {
+        margin-top: 25px;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 5px;
+        letter-spacing: 3px;
+        list-style-type: none;
+    }
+    ol.menu > li a
+    {
+        text-decoration:none;
+        color:black;
+    }
+
+    ol.menu > li a:hover
+    {
+        color:darkred;
+    }
+
+    ol.menu > li:before
+    {
+        font-size: 25px;
+        color: gold;
+        content: "♛";
+    }
+
+    ol.menu > li > ul
+    {
+        margin-left: 10px;
+        text-transform: none;
+        font-weight: 400;
+        font-size: 17px;
+        letter-spacing: 0px;
+        margin-top: 5px;
+        margin-left: 20px;
+        list-style-type: square;
+    }
+    ol.menu > li > ul a
+    {
+        padding: 0;
+        margin-left: 10px;
+        text-transform: none;
+        font-weight: 400;
+        font-size: 17px;
+        letter-spacing: 0px;
+        margin-top: 5px;
+        margin-left: 20px;
+        list-style-type: square;
+        text-decoration: none;
+        color: black;
+    }
+
+    ol.menu > li > ul a:hover
+    {
+        color: darkred;
+    }
+    
+    ol.menu > li > ul > li
+    {
+        margin: 10px;
+    }
+
+    #stopka
+    {
+        font-size: 18px;
+        clear:both;
+        padding: 10px;
+        min-height: 22px;
+        text-align: center;
+        color:#ffffff;
+        background-color: rgb(35, 39, 39);
+    }
+
+    #kontakt a
+    {
+        color:#ffffff;
+        text-decoration: none;
+    }
+    #kontakt a:hover
+    {
+        color: red;
+        text-decoration: none;
+    }
+    
+
+    #kontakt
+    {
+        padding: 2px;
+        font-size: 15px;
+        float: right;
+        text-align: right;
+        margin-right: 75px;
+        text-decoration: none;
+    }
+
+    .nawigacja 
+    {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px;
+        box-sizing: border-box;
+        height: 30px;
+        width: 100%;
+        background: #4a4d6d;
+    }
+      
+    .przycisk-menu 
+    {
+        border: 0;
+        border-radius: 7px;
+        background: #ffffff;
+        
+    }
+      
+    .menu-boczne 
+    {
+        display: flex;
+        box-sizing: border-box;
+        position: fixed;
+        height: 100%;
+        width: 350px;
+        top: 20px;
+        left: -350px;
+        padding: 0;
+        background: #a976c0;
+        transition: 0.7s transform ease-in-out;
+    }
+      
+    .menu-boczne ul 
+    {
+        position: absolute;
+        display: flex;
+        height: calc(100% - 20px);
+        flex-wrap: wrap;
+        margin: 0 10px;
+        padding: 0;
+        list-style-type: none;
+        align-content: flex-start;
+    }
+      
+    .menu-boczne ul li 
+    {
+        display: flex;
+        height: 40px;
+        background: #ffffff;
+        flex-basis: 100%;
+        margin-top: 50px;
+        color:red;
+        border-radius: 8px;
+        overflow: hidden;
+        
+    }
+      
+    .menu-boczne ul li a 
+    {
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: rgb(58, 113, 131);
+        background: #ffffff;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+    
+    .menu-boczne ul li a:hover
+    {
+        color:red;
+    }
+
+    .przycisk-menu:focus ~ .menu-boczne, .menu-boczne:hover 
+    {
+        transform: translateX(350px); 
+    }
+    table, th, td 
+    {
+    border: 1px solid black;
+    }
+
+    ol > li > ul > li
+    {
+        font-size: 15px;
+        margin-top: 7px;
+    }
+    ol > li
+    {
+        margin-top: 35px;
+        font-size: 18px;
+    }
+    ol > li > ul > li > ol > li
+    {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    a
+    {
+        text-decoration: none;
+    }
+    a:hover
+    {
+        color: darkred;
+    }
+   
